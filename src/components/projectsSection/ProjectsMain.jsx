@@ -46,7 +46,7 @@ const ProjectsMain = () => {
     },
     {
       name: "Password Hiding",
-      link: "https://github.com/Bingi-Ramesh/password-hiding",
+      link: "https://bingi-ramesh.github.io/password-hiding-showing/",
       technology: "HTML, CSS, JS",
       github:"https://github.com/Bingi-Ramesh/simple-calculator"
     },

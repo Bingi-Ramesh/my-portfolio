@@ -5,7 +5,7 @@ const NavbarLogo = () => {
         Bingi Ramesh
       </h1>
       <h1 className="text-white font-special font-extrabold text-4xl md:hidden sm:block">
-        AR
+        BR
       </h1>
     </div>
   );

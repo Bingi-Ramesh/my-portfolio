@@ -1,3 +1,4 @@
+import Achievements from "./achievementsSection/Achievements";
 import AboutMeMain from "./components/aboutMeSection/AboutMeMain";
 import ContactMeMain from "./components/contactMeSection/ContactMeMain";
 import ExperienceMain from "./components/experienceSection/ExperienceMain";
@@ -22,6 +23,7 @@ function App() {
       <SubSkills />
       <ExperienceMain />
       <ProjectsMain />
+      <Achievements />
       <ContactMeMain />
       <FooterMain />
     </main>

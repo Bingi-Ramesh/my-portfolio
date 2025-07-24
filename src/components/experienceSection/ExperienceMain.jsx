@@ -25,45 +25,67 @@ const experiences = [
     title: "Web Developer Intern",
     company: "NeuroNexus Innovations",
     duration: "1 Month",
+    image: "/images/me.jpeg",
+    description:
+      "Built responsive UI with React, integrated backend APIs, and visualized real-time data using Chart.js.",
   },
   {
     title: "Team Lead",
-    company: "Aadhya Hackathon2.0 2k25",
-    duration: "",
+    company: "Aadhya Hackathon 2.0 ",
+    duration: "2K25",
+    image: "/images/lead.jpeg",
+    description:
+      "Built responsive UI with React, integrated backend APIs, and visualized real-time data using Chart.js.",
   },
   {
     title: "NSS Volunteer",
     company: "NSS",
     duration: "2 Years",
+    image: "/images/me.jpeg",
+    description:
+      "Built responsive UI with React, integrated backend APIs, and visualized real-time data using Chart.js.",
   },
   {
     title: "Representative",
     company: "Helping Hand Organisation",
     duration: "2 Years",
+    image: "/images/me.jpeg",
+    description:
+      "Built responsive UI with React, integrated backend APIs, and visualized real-time data using Chart.js.",
   },
 ];
 
-const ExperienceCard = ({ title, company, duration }) => (
-  <motion.div
-    initial="hidden"
-    animate="show"
-    variants={fadeIn("up", 0.2)}
-    whileHover={{ scale: 1.05 }}
-    className="bg-[#2d1f1b] text-white border-4 border-orange-500 rounded-2xl p-6 transition-all duration-300 hover:bg-[#ff6a00]"
-  >
-    <h3 className="text-xl font-bold mb-1">{title}</h3>
-    <p className="text-sm mb-1">{company || "-"}</p>
-    <p className="text-xs">{duration || "-"}</p>
-  </motion.div>
+const ExperienceCard = ({ title, company, duration, image, description, index }) => (
+  <div className="flex items-center gap-4">
+    <motion.div
+      initial="hidden"
+      whileInView="show"
+      whileHover={{ scale: 1.1, rotate: 2, transition: { duration: 0.2 } }}
+      viewport={{ once: true }}
+      variants={fadeIn("up", index * 0.2)}
+      className="w-36 h-36 rounded-full overflow-hidden border-4 border-orange-500 shadow-xl shrink-0 transition-all duration-300"
+    >
+      <img src={image} alt={title} className="w-full h-full object-cover" />
+    </motion.div>
+
+    <div className="flex-1 bg-[#2d1f1b] text-white rounded-2xl p-4 shadow-md transition-all duration-300 hover:bg-[#f2913d]">
+      <h3 className="text-lg font-semibold mb-1">{title}</h3>
+      <p className="text-sm mb-1">{company || "-"}</p>
+      <p className="text-xs mb-2">{duration || "-"}</p>
+      <p className="text-sm text-gray-100">{description}</p>
+    </div>
+  </div>
 );
 
 const ExperienceMain = () => {
   return (
-    <section className="py-16 px-4 sm:px-8 md:px-16 bg-gray-100 min-h-screen">
-      <h2 className="text-4xl font-bold text-center text-cyan-600 mb-12">My Experience</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+    <section id="experience" className="py-16 px-4 sm:px-8 md:px-16 bg-gray-100 min-h-screen">
+      <h2 className="text-4xl font-bold text-center text-cyan-600 mb-12">
+        My Experience
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {experiences.map((exp, index) => (
-          <ExperienceCard key={index} {...exp} />
+          <ExperienceCard key={index} {...exp} index={index} />
         ))}
       </div>
     </section>

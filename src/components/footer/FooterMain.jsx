@@ -19,32 +19,39 @@ const FooterMain = () => {
       section: "projects",
     },
   ];
+
   return (
     <div className="px-4">
+      {/* Divider Line */}
       <div className="w-full h-[1px] bg-lightGrey mt-24"></div>
-      <div className="md:flex justify-between mt-4 max-w-[1200px] mx-auto sm:hidden">
-        <p className="text-3xl text-lightGrey ">Bingi Ramesh</p>
-        <ul className="flex gap-4 text-lightGrey text-xl">
-          {footerLinks.map((item, index) => {
-            return (
-              <li key={index}>
-                <Link
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                  offset={-120}
-                  to={item.section}
-                  className="hover:text-white transition-all duration-500 cursor-pointer"
-                >
-                  {item.name}
-                </Link>
-              </li>
-            );
-          })}
+
+      {/* Footer Content */}
+      <div className="max-w-[1200px] mx-auto mt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        {/* Name */}
+        <p className="text-2xl font-semibold text-lightGrey">Bingi Ramesh</p>
+
+        {/* Navigation Links */}
+        <ul className="flex flex-wrap justify-center md:justify-end gap-6 text-lightGrey text-base font-medium">
+          {footerLinks.map((item, index) => (
+            <li key={index}>
+              <Link
+                to={item.section}
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-120}
+                className="cursor-pointer hover:text-white transition-all duration-300"
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
-      <p className="max-w-[1200px] mx-auto text-right mt-2 mb-12 text-sm text-lightBrown">
-        © 2025 Ramesh yadav | All Rights Reserved.
+
+      {/* Copyright */}
+      <p className="max-w-[1200px] mx-auto text-center md:text-right mt-4 mb-12 text-xs text-lightBrown">
+        © 2025 Ramesh Yadav | All Rights Reserved.
       </p>
     </div>
   );

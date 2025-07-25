@@ -52,7 +52,7 @@ const ProjectsMain = () => {
     },
     {
       name: "Password Generator",
-      link: "https://github.com/Bingi-Ramesh/password-generator",
+      link: "https://bingi-ramesh.github.io/password-generator/",
       technology: "HTML, CSS, JS",
       github:"https://github.com/Bingi-Ramesh/simple-calculator"
     },

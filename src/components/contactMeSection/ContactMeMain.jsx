@@ -125,7 +125,7 @@ const ContactMeMain = () => {
           <div className="flex flex-col gap-4">
             <SingleInfo text="rameshyadavbingi776@gmail.com" Icon={HiOutlineMail} />
             <SingleInfo text="+91 9392612161" Icon={FiPhone} />
-            <SingleInfo text="India" Icon={IoLocationOutline} />
+            <SingleInfo text="India, Andhra Pradesh, Kurnool" Icon={IoLocationOutline} />
           </div>
           <div className="flex gap-4">
             <SingleContactSocial link="https://www.linkedin.com/in/bingi-ramesh-02b754280/" Icon={FaLinkedinIn} />

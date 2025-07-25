@@ -25,7 +25,7 @@ const experiences = [
     title: "Web Developer Intern",
     company: "NeuroNexus Innovations",
     duration: "1 Month",
-    image: "/images/me.jpeg",
+    image: "/images/intern.jpeg",
     description:
       "Built responsive UI with React, integrated backend APIs, and visualized real-time data using Chart.js.",
   },
@@ -41,7 +41,7 @@ const experiences = [
     title: "NSS Volunteer",
     company: "NSS",
     duration: "2 Years",
-    image: "/images/me.jpeg",
+    image: "/images/nss.jpeg",
     description:
       "Built responsive UI with React, integrated backend APIs, and visualized real-time data using Chart.js.",
   },
@@ -49,7 +49,7 @@ const experiences = [
     title: "Representative",
     company: "Helping Hand Organisation",
     duration: "2 Years",
-    image: "/images/me.jpeg",
+    image: "/images/hhohr.jpeg",
     description:
       "Built responsive UI with React, integrated backend APIs, and visualized real-time data using Chart.js.",
   },

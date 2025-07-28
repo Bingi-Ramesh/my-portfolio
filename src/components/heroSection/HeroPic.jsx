@@ -12,7 +12,7 @@ const HeroPic = () => {
     >
       {/* Profile Image */}
       <img
-        src="../../public/images/me.jpeg"
+        src="/images/me.jpeg"
         alt="Bingi Ramesh"
         className="max-h-[430px] w-auto rounded-full"
       />

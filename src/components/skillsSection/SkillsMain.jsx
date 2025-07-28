@@ -6,13 +6,12 @@ import {
   FaJava,
   FaGithub,
   FaTools,
-} from "react-icons/fa"; // Added FaGithub and FaTools
+} from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { SiMongodb, SiExpress, SiDatabricks } from "react-icons/si";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../framerMotion/variants";
 
-// Skill data array
 const skills = [
   { skill: "HTML", icon: FaHtml5 },
   { skill: "CSS", icon: FaCss3Alt },
@@ -24,10 +23,9 @@ const skills = [
   { skill: "DSA", icon: SiDatabricks },
   { skill: "Java", icon: FaJava },
   { skill: "GitHub", icon: FaGithub },
-  { skill: "Postman", icon: FaTools }, // Placeholder icon for Postman
+  { skill: "Postman", icon: FaTools },
 ];
 
-// Core subjects array
 const coreSubjects = [
   "Operating Systems",
   "Computer Networks",
@@ -36,10 +34,9 @@ const coreSubjects = [
   "Software Engineering",
 ];
 
-// Single skill card component (without pole)
 const SingleSkill = ({ imgSvg, text }) => {
   return (
-    <div className="hover:-translate-y-6 transition-all duration-500">
+    <div className="hover:-translate-y-6 transition-all duration-500 custom-skill">
       <div className="flex flex-col items-center gap-2 relative">
         <div className="bg-white text-cyan h-[100px] w-[100px] flex items-center justify-center rounded-full hover:text-darkGrey hover:scale-105 transform transition-all duration-500 text-6xl border-4 border-orange">
           {imgSvg}
@@ -70,7 +67,7 @@ const AllSkills = () => {
 
 const AllSkillsSM = () => {
   return (
-    <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-12 my-12">
+    <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-12 my-12 small-grid">
       {skills.map((item, index) => (
         <motion.div
           variants={fadeIn("up", 0.2)}
@@ -129,32 +126,46 @@ const CoreSubjectsSection = () => {
 
 const SkillsMain = () => {
   return (
-    <div id="skills">
-      <div className="max-w-[1200px] px-4 mx-auto min-h-[600px] relative overflow-hidden">
-        <motion.div
-          variants={fadeIn("down", 0.2)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
-        >
-          <SkillsText />
-        </motion.div>
+    <>
+      <style>{`
+        @media (max-width: 640px) {
+          .custom-skill {
+            transform: scale(0.9);
+          }
+          .small-grid {
+            gap: 8px;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 0 10px;
+          }
+        }
+      `}</style>
 
-        {/* Desktop view */}
-        <div className="bottom-[50px] absolute left-[42%] -translate-x-[40%] sm:hidden lg:block">
-          <AllSkills />
+      <div id="skills">
+        <div className="max-w-[1200px] px-4 mx-auto min-h-[600px] relative overflow-hidden">
+          <motion.div
+            variants={fadeIn("down", 0.2)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.7 }}
+          >
+            <SkillsText />
+          </motion.div>
+
+          {/* Desktop view */}
+          <div className="bottom-[50px] absolute left-[42%] -translate-x-[40%] hidden lg:block">
+            <AllSkills />
+          </div>
+
+          {/* Mobile / Tablet view */}
+          <div className="block lg:hidden">
+            <AllSkillsSM />
+          </div>
         </div>
 
-        {/* Mobile / Tablet view */}
-        <div className="sm:block lg:hidden">
-          <AllSkillsSM />
-        </div>
+        {/* Core Subjects Section */}
+        <CoreSubjectsSection />
       </div>
-
-      {/* Core Subjects Section */}
-     
-      <CoreSubjectsSection />
-    </div>
+    </>
   );
 };
 

@@ -15,7 +15,7 @@ const ProjectsMain = () => {
     },
     {
       name: "Hospital Manamemant System",
-      year: "Multi-role platform for patients, doctors, receptionists, and admins; features appointment booking, billing, andreporting.Integrated ratings and reviews;",
+      year: "Multi-role platform for patients, doctors, receptionists, and admins, appointment booking, billing, and reporting.Integrated ratings and reviews.",
       align: "left",
       image: "images/hospital.webp",
       link: "https://hospital-frontend-btec.onrender.com/",
@@ -58,13 +58,13 @@ const ProjectsMain = () => {
     },
     {
       name: "Simple E-Commerce",
-      link: "https://github.com/Bingi-Ramesh/simple-ecommerce",
-      technology: "React, CSS",
-      github:"https://github.com/Bingi-Ramesh/simple-calculator"
+      link: "https://bingi-ramesh.github.io/e-commerce/",
+      technology: "HTML, CSS",
+      github:"https://bingi-ramesh.github.io/e-commerce/"
     },
     {
       name: "Quiz App",
-      link: "https://github.com/Bingi-Ramesh/quiz-app",
+      link: "https://quiz-app-mahabarat.vercel.app/",
       technology: "React, CSS",
       github:"https://github.com/Bingi-Ramesh/simple-calculator"
     },

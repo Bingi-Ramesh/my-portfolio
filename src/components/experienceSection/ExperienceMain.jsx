@@ -27,7 +27,7 @@ const experiences = [
     duration: "1 Month",
     image: "/images/intern.jpeg",
     description:
-      "Built responsive UI with React, integrated backend APIs, and visualized real-time data using Chart.js.",
+      "Worked on MERN stack development, contributing to frontend  features and building responsive, user-friendly applications.",
   },
   {
     title: "Team Lead",
@@ -35,7 +35,7 @@ const experiences = [
     duration: "2K25",
     image: "/images/lead.jpeg",
     description:
-      "Built responsive UI with React, integrated backend APIs, and visualized real-time data using Chart.js.",
+      "Led a hackathon team, managing tasks, guiding development, and ensuring timely project delivery.",
   },
   {
     title: "NSS Volunteer",
@@ -43,7 +43,7 @@ const experiences = [
     duration: "2 Years",
     image: "/images/nss.jpeg",
     description:
-      "Built responsive UI with React, integrated backend APIs, and visualized real-time data using Chart.js.",
+      "Served 2 years in NSS, leading community service, awareness campaigns, and volunteer activities.",
   },
   {
     title: "Representative",
@@ -51,7 +51,7 @@ const experiences = [
     duration: "2 Years",
     image: "/images/hhohr.jpeg",
     description:
-      "Built responsive UI with React, integrated backend APIs, and visualized real-time data using Chart.js.",
+      "Organized fundraising events with Helping Hands Organization, gaining teamwork and management skills.",
   },
 ];
 

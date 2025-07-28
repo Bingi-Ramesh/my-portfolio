@@ -12,7 +12,7 @@ const AboutMeMain = () => {
         variants={fadeIn("right", 0)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: false, amount: 0.2 }}
         className="w-full"
       >
         <div className="flex flex-col md:flex-row gap-10 md:items-start md:text-left text-center">
@@ -29,7 +29,7 @@ const AboutMeMain = () => {
             <h3 className="text-2xl font-semibold text-orange mb-4">Education</h3>
             <ul className="list-disc ml-6 text-sm text-gray-800 space-y-2">
               <li>
-                <strong>Rajiv Gandhi University of Knowledge Technologies (RGUKT), RK Valley</strong> – B.Tech in Computer Science, 2026 Passed Out
+                <strong>Rajiv Gandhi University of Knowledge Technologies (RGUKT), RK Valley</strong> – B.Tech in Computer Science, 2026.
               </li>
               <li>
                 <strong>Rajiv Gandhi University of Knowledge Technologies (RGUKT), RK Valley</strong> – Pre-University Course (MBiPC), CGPA: 9.56

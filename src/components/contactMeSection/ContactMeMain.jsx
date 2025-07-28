@@ -98,7 +98,7 @@ const ContactMeMain = () => {
               />
               <textarea
                 name="message"
-                rows="9"
+                rows="5"
                 placeholder="Message"
                 required
                 className="rounded-lg bg-lightBrown p-2"

@@ -19,13 +19,13 @@ const achievements = [
     title: "NSS Volunteer",
     description:
       "2-year contribution to National Service Scheme (NSS) activities including camps and social outreach.",
-    certificate: "https://example.com/nss-certificate",
+    certificate: "https://drive.google.com/file/d/1tyPsvWBjQ4o1ueJi-tQCmIM8rY4V-tHK/view",
   },
   {
     title: "Smart India Hackathon 2025",
     description:
       "Participated in SIH 2025 and built a scalable solution for real-world problems using MERN stack.",
-    certificate: "https://example.com/sih-2025-certificate",
+    certificate: "https://drive.google.com/file/d/1tzUWzhmVF7Hg66Y6OIroZmrafulim_3v/view",
   },
   {
     title: "Solved 500+ DSA Problems",

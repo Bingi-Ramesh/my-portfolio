@@ -6,28 +6,36 @@ import { BsFillArrowUpRightCircleFill, BsGithub } from "react-icons/bs";
 const ProjectsMain = () => {
   const projects = [
     {
+      name: "YatraMitra",
+      year: "A web-based bus travel booking system built with React and Django (Python).",
+      align: "right",
+      image: "images/bus.jpg",
+      link: "https://bus-booking-react-frontend.onrender.com/",
+      github:"https://github.com/Bingi-Ramesh/bus-booking-react-frontend"
+    },
+    {
       name: "LMS Connect",
       year: "Full-stack MERN application enabling users to issue, renew, return, and request books; staff manage inventoryand donation requests.",
-      align: "right",
+      align: "left",
       image: "images/library.webp",
       link: "https://mini-project-library-donation.vercel.app/",
-      github:"https://github.com/Bingi-Ramesh/simple-calculator"
+      github:"https://github.com/Bingi-Ramesh/mini-project-library-donation"
     },
     {
       name: "Hospital Manamemant System",
       year: "Multi-role platform for patients, doctors, receptionists, and admins, appointment booking, billing, and reporting.Integrated ratings and reviews.",
-      align: "left",
+      align: "right",
       image: "images/hospital.webp",
       link: "https://hospital-frontend-btec.onrender.com/",
-      github:"https://github.com/Bingi-Ramesh/simple-calculator"
+      github:"https://github.com/Bingi-Ramesh/hospital-api"
     },
     {
       name: "Event Managemant System",
       year: "Led frontend development during a college hackathon; implemented CRUD operations on events, volunteer registration & allotment, ratings and reviews.",
-      align: "right",
+      align: "left",
       image: "images/library.webp",
       link: "https://github.com/Bingi-Ramesh/Event-Management-System",
-      github:"https://github.com/Bingi-Ramesh/simple-calculator"
+      github:"https://github.com/Bingi-Ramesh/Event-Management-System"
     },
   ];
 
@@ -36,37 +44,37 @@ const ProjectsMain = () => {
       name: "Calculator",
       link: "https://bingi-ramesh.github.io/simple-calculator/",
       technology: "HTML, CSS, JS",
-      github:"https://github.com/Bingi-Ramesh/simple-calculator"
+      github:"https://github.com/Bingi-Ramesh"
     },
     {
       name: "Stopwatch",
       link: "https://bingi-ramesh.github.io/stop-watch/",
       technology: "HTML, CSS, JS",
-      github:"https://github.com/Bingi-Ramesh/simple-calculator"
+      github:"https://github.com/Bingi-Ramesh"
     },
     {
       name: "Password Hiding",
       link: "https://bingi-ramesh.github.io/password-hiding-showing/",
       technology: "HTML, CSS, JS",
-      github:"https://github.com/Bingi-Ramesh/simple-calculator"
+      github:"https://github.com/Bingi-Ramesh"
     },
     {
       name: "Password Generator",
       link: "https://bingi-ramesh.github.io/password-generator/",
       technology: "HTML, CSS, JS",
-      github:"https://github.com/Bingi-Ramesh/simple-calculator"
+      github:"https://github.com/Bingi-Ramesh"
     },
     {
       name: "Simple E-Commerce",
       link: "https://bingi-ramesh.github.io/e-commerce/",
       technology: "HTML, CSS",
-      github:"https://bingi-ramesh.github.io/e-commerce/"
+      github:"https://github.com/Bingi-Ramesh"
     },
     {
       name: "Quiz App",
       link: "https://quiz-app-mahabarat.vercel.app/",
       technology: "React, CSS",
-      github:"https://github.com/Bingi-Ramesh/simple-calculator"
+      github:"https://github.com/Bingi-Ramesh"
     },
   ];
   const SmallProjectsSection = () => {
@@ -146,13 +154,13 @@ const ProjectsMain = () => {
         <div>
           <h2 className="md:text-3xl sm:text-2xl text-orange">{name}</h2>
           <h2
-            className={`text-xl font-thin text-white font-special sm:text-center ${
-              align === "left" ? "md:text-right" : "md:text-left"
-            }`}
-          >
-            {year}
-          </h2>
-  
+  className={`text-xl font-thin text-white font-special text-justify sm:text-center ${
+    align === "left" ? "md:text-right" : "md:text-left"
+  } md:text-justify`}
+>
+  {year}
+</h2>
+
           <div
             className={`flex items-center gap-4 mt-2 text-cyan hover:text-orange transition-all duration-500 sm:justify-center ${
               align === "left" ? "md:justify-end" : "md:justify-start"
@@ -166,7 +174,7 @@ const ProjectsMain = () => {
             >
               View <BsFillArrowUpRightCircleFill />
             </a>
-  
+
             {github && (
               <a
                 href={github}
@@ -180,7 +188,7 @@ const ProjectsMain = () => {
             )}
           </div>
         </div>
-  
+
         <div className="max-h-[220px] max-w-[400px] rounded-xl overflow-hidden hover:scale-110 transform transition-all duration-500 relative border border-white">
           <img src={image} alt="website image" className="w-full h-full" />
         </div>

@@ -27,11 +27,11 @@ const NavbarMain = () => {
         }
       `}</style>
 
-      <nav className="max-w-[1400px] mx-auto w-full fixed left-1/2 -translate-x-1/2 z-20 flex gap-2 sm:gap-4 mt-2 px-2 sm:px-4">
+      <nav className=" max-w-[1400px] mx-auto w-full fixed left-1/2 -translate-x-1/2 z-20 flex gap-2 sm:gap-4 mt-2 px-2 sm:px-4">
         {/* Main Navbar container */}
         <div className="flex justify-between items-center w-full max-w-[1200px] mx-auto bg-black rounded-full border border-orange navbar-inner">
           {/* Logo hidden <350px */}
-          <div className="navbar-logo">
+          <div className=" m-5 navbar-logo">
             <NavbarLogo />
           </div>
 
@@ -45,7 +45,7 @@ const NavbarMain = () => {
           </div>
 
           {/* Button hidden <350px */}
-          <div className="navbar-btn hidden sm:block">
+          <div className="mr-5 navbar-btn hidden sm:block">
             <NavbarBtn />
           </div>
         </div>

@@ -6,9 +6,17 @@ import { BsFillArrowUpRightCircleFill, BsGithub } from "react-icons/bs";
 const ProjectsMain = () => {
   const projects = [
     {
+      name: "Movie Recommendation System",
+      year: "A Django-based movie recommendation system that suggests personalized Telugu movies using machine learning.",
+      align: "right",
+      image: "images/movie.webp",
+      link: "https://movie-recommendation-system-django.onrender.com/",
+      github:"https://github.com/Bingi-Ramesh/movie-recommendation-system-django"
+    },
+    {
       name: "YatraMitra",
       year: "A web-based bus travel booking system built with React and Django (Python).",
-      align: "right",
+      align: "left",
       image: "images/bus.jpg",
       link: "https://bus-booking-react-frontend.onrender.com/",
       github:"https://github.com/Bingi-Ramesh/bus-booking-react-frontend"
@@ -16,7 +24,7 @@ const ProjectsMain = () => {
     {
       name: "LMS Connect",
       year: "Full-stack MERN application enabling users to issue, renew, return, and request books; staff manage inventoryand donation requests.",
-      align: "left",
+      align: "right",
       image: "images/library.webp",
       link: "https://mini-project-library-donation.vercel.app/",
       github:"https://github.com/Bingi-Ramesh/mini-project-library-donation"
@@ -24,7 +32,7 @@ const ProjectsMain = () => {
     {
       name: "Hospital Manamemant System",
       year: "Multi-role platform for patients, doctors, receptionists, and admins, appointment booking, billing, and reporting.Integrated ratings and reviews.",
-      align: "right",
+      align: "left",
       image: "images/hospital.webp",
       link: "https://hospital-frontend-btec.onrender.com/",
       github:"https://github.com/Bingi-Ramesh/hospital-api"
@@ -32,8 +40,8 @@ const ProjectsMain = () => {
     {
       name: "Event Managemant System",
       year: "Led frontend development during a college hackathon; implemented CRUD operations on events, volunteer registration & allotment, ratings and reviews.",
-      align: "left",
-      image: "images/library.webp",
+      align: "right",
+      image: "images/event.jpg",
       link: "https://github.com/Bingi-Ramesh/Event-Management-System",
       github:"https://github.com/Bingi-Ramesh/Event-Management-System"
     },

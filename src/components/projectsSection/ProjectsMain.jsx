@@ -5,22 +5,22 @@ import { fadeIn } from "../../framerMotion/variants";
 import { BsFillArrowUpRightCircleFill, BsGithub } from "react-icons/bs";
 const ProjectsMain = () => {
   const projects = [
-    {
-      name: "Movie Recommendation System",
-      year: "A Django-based movie recommendation system that suggests personalized Telugu movies using machine learning.",
-      align: "right",
-      image: "images/movie.webp",
-      link: "https://movie-recommendation-system-django.onrender.com/",
-      github:"https://github.com/Bingi-Ramesh/movie-recommendation-system-django"
-    },
-    {
-      name: "YatraMitra",
-      year: "A web-based bus travel booking system built with React and Django (Python).",
-      align: "left",
-      image: "images/bus.jpg",
-      link: "https://bus-booking-react-frontend.onrender.com/",
-      github:"https://github.com/Bingi-Ramesh/bus-booking-react-frontend"
-    },
+    // {
+    //   name: "Movie Recommendation System",
+    //   year: "A Django-based movie recommendation system that suggests personalized Telugu movies using machine learning.",
+    //   align: "right",
+    //   image: "images/movie.webp",
+    //   link: "https://movie-recommendation-system-django.onrender.com/",
+    //   github:"https://github.com/Bingi-Ramesh/movie-recommendation-system-django"
+    // },
+    // {
+    //   name: "YatraMitra",
+    //   year: "A web-based bus travel booking system built with React and Django (Python).",
+    //   align: "left",
+    //   image: "images/bus.jpg",
+    //   link: "https://bus-booking-react-frontend.onrender.com/",
+    //   github:"https://github.com/Bingi-Ramesh/bus-booking-react-frontend"
+    // },
     {
       name: "LMS Connect",
       year: "Full-stack MERN application enabling users to issue, renew, return, and request books; staff manage inventoryand donation requests.",

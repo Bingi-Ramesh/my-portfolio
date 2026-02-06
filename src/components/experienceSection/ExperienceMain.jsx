@@ -21,14 +21,14 @@ const fadeIn = (direction = "up", delay = 0) => {
 };
 
 const experiences = [
-  {
-    title: "Web Developer Intern",
-    company: "NeuroNexus Innovations",
-    duration: "1 Month",
-    image: "/images/intern.jpeg",
-    description:
-      "Worked on MERN stack development, contributing to frontend  features and building responsive, user-friendly applications.",
-  },
+  // {
+  //   title: "Web Developer Intern",
+  //   company: "NeuroNexus Innovations",
+  //   duration: "1 Month",
+  //   image: "/images/intern.jpeg",
+  //   description:
+  //     "Worked on MERN stack development, contributing to frontend  features and building responsive, user-friendly applications.",
+  // },
   {
     title: "Team Lead",
     company: "Aadhya Hackathon 2.0 ",

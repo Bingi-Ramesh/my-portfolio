@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 
 const achievements = [
-  {
-    title: "Web Development Internship",
-    description:
-      "Completed internship at NeuroNexus Innovations, worked on full-stack web development using React and Node.js.",
-    certificate:
-      "https://drive.google.com/file/d/1peJOzHqbgzbRNRQicpbUchx5f71OQw3I/view",
-  },
+  // {
+  //   title: "Web Development Internship",
+  //   description:
+  //     "Completed internship at NeuroNexus Innovations, worked on full-stack web development using React and Node.js.",
+  //   certificate:
+  //     "https://drive.google.com/file/d/1peJOzHqbgzbRNRQicpbUchx5f71OQw3I/view",
+  // },
   {
     title: "DSA in Java - GeeksforGeeks",
     description:
